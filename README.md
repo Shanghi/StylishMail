@@ -56,10 +56,10 @@ You can paste these anywhere into your mail (one at a time) to see examples of e
 <br/>**`<bg2=World\GOOBER\mm_xmas_treelights_01 top=90>`**
 <br/>**`<bg2=creature/bonegolem/BoneGolemSkullbag bottom=200>`**
 
-### Saving and Loading
+### Saving and Loading:
 Letter drafts are saved/loaded/deleted by the mail's subject, so you must set one first.
 
-### How to extract and view all game textures
+### How to extract and view all game textures:
 This looks like a lot of steps, but every click is explained!
 1. Download MPQ Editor at http://www.zezula.net/en/mpq/download.html and extract it anywhere (no install needed).
 2. Open it and at the top left pick MPQs > Open MPQs.
