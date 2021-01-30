@@ -1,0 +1,11 @@
+## Interface: 20400
+## Title: StylishMail
+## Author: Pyralis
+## Version: 1.0
+## Notes: Allows you to write longer mail with colors and textures.
+## SavedVariables: StylishMailSave
+## DefaultState: Enabled
+## LoadOnDemand: 0
+
+StylishMail.xml
+StylishMail.lua

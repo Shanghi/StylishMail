@@ -1,0 +1,345 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+   <Frame name="StylishMailPreviewFrame" toplevel="true" hidden="true" parent="UIParent" enableMouse="true" movable="true">
+      <Size>
+         <AbsDimension x="384" y="442"/>
+      </Size>
+      <Anchors>
+         <Anchor point="TOPLEFT" relativeTo="InboxFrame" relativePoint="TOPRIGHT">
+            <Offset>
+               <AbsDimension x="-10" y="0"/>
+            </Offset>
+         </Anchor>
+      </Anchors>
+      <Layers>
+         <Layer level="BACKGROUND">
+            <Texture name="StylishMailPreviewFrameIcon" file="Interface\MailFrame\Mail-Icon">
+               <Size>
+                  <AbsDimension x="60" y="60"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="TOPLEFT">
+                     <Offset>
+                        <AbsDimension x="9" y="-6"/>
+                     </Offset>
+                  </Anchor>
+               </Anchors>
+            </Texture>
+         </Layer>
+         <Layer level="BORDER">
+            <Texture name="StylishMailPreviewFrameTopLeft" file="Interface\ClassTrainerFrame\UI-ClassTrainer-TopLeft">
+               <Size>
+                  <AbsDimension x="256" y="256"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="TOPLEFT"/>
+               </Anchors>
+            </Texture>
+            <Texture name="StylishMailPreviewFrameTopRight" file="Interface\ClassTrainerFrame\UI-ClassTrainer-TopRight">
+               <Size>
+                  <AbsDimension x="128" y="256"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="TOPLEFT" relativeTo="StylishMailPreviewFrameTopLeft" relativePoint="TOPRIGHT"/>
+               </Anchors>
+            </Texture>
+            <Texture name="StylishMailPreviewFrameBotLeft" file="Interface\MailFrame\UI-OpenMail-BotLeft">
+               <Size>
+                  <AbsDimension x="256" y="256"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="TOPLEFT" relativeTo="StylishMailPreviewFrameTopLeft" relativePoint="BOTTOMLEFT"/>
+               </Anchors>
+            </Texture>
+            <Texture name="StylishMailPreviewFrameBotRight" file="Interface\ClassTrainerFrame\UI-ClassTrainer-BotRight">
+               <Size>
+                  <AbsDimension x="128" y="256"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="TOPLEFT" relativeTo="StylishMailPreviewFrameTopLeft" relativePoint="BOTTOMRIGHT"/>
+               </Anchors>
+            </Texture>
+         </Layer>
+         <Layer level="ARTWORK">
+            <FontString name="StylishMailPreviewTitleText" inherits="GameFontNormal" text="Stylish Mail Preview">
+               <Size>
+                  <AbsDimension x="224" y="24"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="CENTER">
+                     <Offset>
+                        <AbsDimension x="6" y="197"/>
+                     </Offset>
+                  </Anchor>
+               </Anchors>
+            </FontString>
+            <FontString name="StylishMailPreviewHelpText" inherits="GameFontHighlightSmall" text="TAKE_ATTACHMENTS">
+               <Size>
+                  <AbsDimension x="0" y="0"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT">
+                     <Offset>
+                        <AbsDimension x="39" y="89"/>
+                     </Offset>
+                  </Anchor>
+               </Anchors>
+            </FontString>
+            <FontString name="StylishMailPreviewSavedText" inherits="GameFontGreenSmall" text="Draft saved">
+               <Size>
+                  <AbsDimension x="0" y="0"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT">
+                     <Offset>
+                        <AbsDimension x="28" y="26"/>
+                     </Offset>
+                  </Anchor>
+               </Anchors>
+            </FontString>
+            <FontString name="StylishMailPreviewSenderLabel" inherits="GameFontHighlight" text="FROM">
+               <Size>
+                  <AbsDimension x="0" y="16"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="TOPRIGHT" relativePoint="TOPLEFT">
+                     <Offset>
+                        <AbsDimension x="114" y="-45"/>
+                     </Offset>
+                  </Anchor>
+               </Anchors>
+            </FontString>
+            <FontString name="StylishMailPreviewSender" inherits="GameFontNormal" justifyH="LEFT" text="You">
+               <Size>
+                  <AbsDimension x="110" y="0"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="LEFT" relativeTo="StylishMailPreviewSenderLabel" relativePoint="RIGHT">
+                     <Offset>
+                        <AbsDimension x="5" y="0"/>
+                     </Offset>
+                  </Anchor>
+               </Anchors>
+            </FontString>
+            <FontString name="StylishMailPreviewSubjectLabel" inherits="GameFontHighlight" text="MAIL_SUBJECT_LABEL">
+               <Size>
+                  <AbsDimension x="0" y="16"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="TOPRIGHT" relativePoint="TOPLEFT">
+                     <Offset>
+                        <AbsDimension x="114" y="-65"/>
+                     </Offset>
+                  </Anchor>
+               </Anchors>
+            </FontString>
+            <FontString name="StylishMailPreviewSubject" inherits="GameFontNormalSmall" justifyH="LEFT" justifyV="TOP">
+               <Size>
+                  <AbsDimension x="225" y="16"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="TOPLEFT" relativeTo="StylishMailPreviewSubjectLabel" relativePoint="TOPRIGHT">
+                     <Offset>
+                        <AbsDimension x="5" y="-4"/>
+                     </Offset>
+                  </Anchor>
+               </Anchors>
+            </FontString>
+            <Texture name="StylishMailPreviewHorizontalBarLeft" file="Interface\ClassTrainerFrame\UI-ClassTrainer-HorizontalBar">
+               <Size>
+                  <AbsDimension x="256" y="16"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="TOPLEFT">
+                     <Offset>
+                        <AbsDimension x="15" y="-350"/>
+                     </Offset>
+                  </Anchor>
+               </Anchors>
+               <TexCoords left="0" right="1.0" top="0" bottom="0.25"/>
+            </Texture>
+            <Texture file="Interface\ClassTrainerFrame\UI-ClassTrainer-HorizontalBar">
+               <Size>
+                  <AbsDimension x="75" y="16"/>
+               </Size>
+               <Anchors>
+                  <Anchor point="LEFT" relativeTo="StylishMailPreviewHorizontalBarLeft" relativePoint="RIGHT">
+                     <Offset>
+                        <AbsDimension x="0" y="0"/>
+                     </Offset>
+                  </Anchor>
+               </Anchors>
+               <TexCoords left="0" right="0.29296875" top="0.25" bottom="0.5"/>
+            </Texture>
+         </Layer>
+      </Layers>
+      <Frames>
+         <ScrollFrame name="StylishMailPreviewScrollFrame" inherits="UIPanelScrollFrameTemplate">
+            <Size>
+               <AbsDimension x="296" y="257"/>
+            </Size>
+            <Anchors>
+               <Anchor point="TOPLEFT">
+                  <Offset>
+                     <AbsDimension x="21" y="-97"/>
+                  </Offset>
+               </Anchor>
+            </Anchors>
+            <Layers>
+               <Layer level="OVERLAY">
+                  <Texture name="StylishMailScrollBarBackgroundTop" file="Interface\PaperDollInfoFrame\UI-Character-ScrollBar">
+                     <Size>
+                        <AbsDimension x="31" y="256"/>
+                     </Size>
+                     <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
+                           <Offset>
+                              <AbsDimension x="-2" y="5"/>
+                           </Offset>
+                        </Anchor>
+                     </Anchors>
+                     <TexCoords left="0" right="0.484375" top="0" bottom="1.0"/>
+                  </Texture>
+                  <Texture file="Interface\PaperDollInfoFrame\UI-Character-ScrollBar">
+                     <Size>
+                        <AbsDimension x="31" y="106"/>
+                     </Size>
+                     <Anchors>
+                        <Anchor point="BOTTOMLEFT" relativePoint="BOTTOMRIGHT">
+                           <Offset>
+                              <AbsDimension x="-2" y="-2"/>
+                           </Offset>
+                        </Anchor>
+                     </Anchors>
+                     <TexCoords left="0.515625" right="1.0" top="0" bottom="0.4140625"/>
+                  </Texture>
+               </Layer>
+               <Layer level="BACKGROUND">
+                  <Texture name="StylishMailStationeryBackgroundLeft">
+                     <Size>
+                        <AbsDimension x="252" y="256"/>
+                     </Size>
+                     <Anchors>
+                        <Anchor point="TOPLEFT"/>
+                     </Anchors>
+                  </Texture>
+                  <Texture name="StylishMailStationeryBackgroundRight">
+                     <Size>
+                        <AbsDimension x="64" y="256"/>
+                     </Size>
+                     <Anchors>
+                        <Anchor point="TOPLEFT" relativeTo="StylishMailStationeryBackgroundLeft" relativePoint="TOPRIGHT"/>
+                     </Anchors>
+                  </Texture>
+               </Layer>
+            </Layers>
+            <ScrollChild>
+               <Frame name="StylishMailPreviewScrollChildFrame">
+                  <Size>
+                     <AbsDimension x="296" y="255"/>
+                  </Size>
+                  <Anchors>
+                     <Anchor point="TOPLEFT">
+                        <Offset>
+                           <AbsDimension x="0" y="0"/>
+                        </Offset>
+                     </Anchor>
+                  </Anchors>
+                  <Layers>
+                     <Layer level="BACKGROUND">
+                        <FontString name="StylishMailPreviewBodyText" font="Fonts/MORPHEUS.TTF" justifyH="LEFT" nonspacewrap="true">
+                           <FontHeight>
+                              <AbsValue val="15"/>
+                           </FontHeight>
+                           <Color r="0.18" g="0.12" b="0.06"/>
+                           <Size>
+                              <AbsDimension x="276" y="0"/>
+                           </Size>
+                           <Anchors>
+                              <Anchor point="TOPLEFT">
+                                 <Offset>
+                                    <AbsDimension x="10" y="-10"/>
+                                 </Offset>
+                              </Anchor>
+                           </Anchors>
+                        </FontString>
+                     </Layer>
+                  </Layers>
+               </Frame>
+            </ScrollChild>
+         </ScrollFrame>
+         <Button name="StylishMailPreviewSaveButton" inherits="UIPanelButtonTemplate" text="SAVE">
+            <Size>
+               <AbsDimension x="80" y="22"/>
+            </Size>
+            <Anchors>
+               <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT">
+                  <Offset>
+                     <AbsDimension x="-39" y="10"/>
+                  </Offset>
+               </Anchor>
+            </Anchors>
+         </Button>
+         <Button name="StylishMailPreviewLoadButton" inherits="UIPanelButtonTemplate" text="Load">
+            <Size>
+               <AbsDimension x="82" y="22"/>
+            </Size>
+            <Anchors>
+               <Anchor point="RIGHT" relativeTo="StylishMailPreviewSaveButton" relativePoint="LEFT">
+                  <Offset>
+                     <AbsDimension x="0" y="0"/>
+                  </Offset>
+               </Anchor>
+            </Anchors>
+         </Button>
+         <Button name="StylishMailPreviewDeleteButton" inherits="UIPanelButtonTemplate" text="DELETE">
+            <Size>
+               <AbsDimension x="82" y="22"/>
+            </Size>
+            <Anchors>
+               <Anchor point="RIGHT" relativeTo="StylishMailPreviewLoadButton" relativePoint="LEFT">
+                  <Offset>
+                     <AbsDimension x="0" y="0"/>
+                  </Offset>
+               </Anchor>
+            </Anchors>
+         </Button>
+         <Button name="StylishMailPreviewCloseButton" inherits="UIPanelCloseButton">
+            <Anchors>
+               <Anchor point="CENTER" relativePoint="TOPRIGHT">
+                  <Offset>
+                     <AbsDimension x="-47" y="-25"/>
+                  </Offset>
+               </Anchor>
+            </Anchors>
+         </Button>
+         <Frame name="StylishMailPreviewDropDown" inherits="UIDropDownMenuTemplate">
+            <Anchors>
+               <Anchor point="LEFT" relativeTo="StylishMailPreviewSender" relativePoint="RIGHT">
+                  <Offset>
+                     <AbsDimension x="-35" y="0"/>
+                  </Offset>
+               </Anchor>
+            </Anchors>
+         </Frame>       
+      </Frames>
+      <Scripts>
+         <OnLoad>
+            this:RegisterForDrag("LeftButton")
+            this:RegisterEvent("MAIL_CLOSED")
+         </OnLoad>
+         <OnEvent>
+            this:Hide()
+         </OnEvent>
+         <OnDragStart>
+            this:StartMoving()
+         </OnDragStart>
+         <OnDragStop>
+            this:StopMovingOrSizing()
+         </OnDragStop>
+         <OnMouseWheel>
+            return
+         </OnMouseWheel>
+      </Scripts>
+   </Frame>
+</Ui>
