@@ -11,9 +11,9 @@ This will let you add text colors and game textures to your mail. The recipient 
 To open the preview window, click the magnifying glass button at the top left of the mail window.
 
 ### Ways to use colors:
-**`<c=white>`**this text would be white - can be any html/css color name
-<br/>**`<c=epic>`**colored by item quality - can be poor/common/uncommon/rare/epic/legendary/artifact
-<br/>**`<c=ff0000>`**[hex-style color code](http://www.rapidtables.com/web/color/color-picker.htm)
+**`<c=white>`** this text would be white - can be any html/css color name
+<br/>**`<c=epic>`** colored by item quality - can be poor/common/uncommon/rare/epic/legendary/artifact
+<br/>**`<c=ff0000>`** [hex-style color code](http://www.rapidtables.com/web/color/color-picker.htm)
 <br/>**`</c>`** resets the color completely and using it is optional - it's OK to switch colors without it
 
 Example: `normal text <c=red>now red text <c=ffff00>now it's yellow</c> now it's back to normal`
